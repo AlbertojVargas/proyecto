@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<title>Mis Torneos /Cronometro</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet">
+		<link rel="icon" type="text/css" href="img/mistorneos.ico">
+		<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+</head>
+
+<body>
+
+	<div id="contenedor">
+		<div class="reloj" id="Horas">00</div>
+		<div class="reloj" id="Minutos">:00</div>
+		<div class="reloj" id="Segundos">:00</div>
+		<div class="reloj" id="Centesimas">:00</div>
+		<input type="button" class="boton" id="inicio" value="Iniciar &#9658;" onclick="inicio();">
+		<input type="button" class="boton" id="parar" value="Parar &#8718;" onclick="parar();" disabled>
+		<input type="button" class="boton" id="continuar" value="Reiniciar &#8634;" onclick="inicio();" disabled>
+		<input type="button" class="boton" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div align="center">
+		<a href="index.html"><input type="button" class="boton" id="inicio" value="Inicio"></a>
+	</div>
+	
+	<div align="center">
+		<img src="img/mistorneost.png" alt="">
+	</div>
+	
+	<script src="cronometro.js"></script>
+	
+</body>
+</html>

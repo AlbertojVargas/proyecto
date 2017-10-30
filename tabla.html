@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="estilo.css">
+			<link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet">
+		<title>Mis Torneos</title>
+	</head>
+
+
+	<body onLoad="iniciar();" id="tabla">
+		<section class="seccion1">
+			<header class="header">
+				<div class="contenedor">
+					<h1 class="logo">Mis Torneos</h1>
+					<span class="icon-menu" id="btn-menu"></span>
+					<nav class="nav" id="nav">
+						<ul class="menu">
+							<li class="menu_item"><a href="index.html" class="menu_link">Inicio</a></li>
+							<li class="menu_item"><a href="recursos.html" class="menu_link">Recursos</a></li>
+							<li class="menu_item"><a href="registro.html" class="menu_link">Registro</a></li>
+							<li class="menu_item"><a href="contacto.html" class="menu_link">Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+		</section>
+   
+		<h1 id="t5" align="center">Mis Torneos</h1>
+		   	<h1 align="center">Campeonato de fútbol</h1>
+						
+					<div align="center">   
+						<h3>Grupo A</h3>
+						<form name="f1" class="formularioTipo2" method="get">
+							<select  size="1" name="EA" class="seleccion">
+								<option></option>
+								<option> Argentina </option>
+								<option> Brasil </option>
+								<option> Colombia </option>						
+							</select>
+						</form>	
+					</div>
+					
+					<div  id="t1" align="center">  
+						<h3>Grupo B</h3>
+						<form name="f2" class="formularioTipo2" method="get">
+							<select size="1" name="EB" class="seleccion">
+								<option></option>
+								<option> Uruguay </option>
+								<option> Perú </option>
+								<option> Venezuela </option>
+							</select>
+						</form>
+						<!--   <input type="button" value="Seleccionar" onclick="alert('La opción seleccionada es: '+D1.options[D1.selectedIndex].text)"> </p> -->
+					</div>
+					
+					<div align="center">
+						<form name ="fGoles" method="get">
+							<h5 align="center">Goles Equipo Grupo A</h5>
+							<input id="nombre" type="text" name="golesA" onkeydown="return validarNumP(event)" class="goles" />
+							<h5 id="t2" align="center">Goles Equipo Grupo B</h5>
+							<input type = "text" name="golesB" onkeydown="return validarNumP(event)" class="goles" /> <br><br>
+							<input type = "button"  id="t3" value="Aplicar" type="reset" name ="BAplicar"  onclick="Aplicar();Aplicar2()" class="boton boton1" />
+						    <br>
+							<br>
+						</form>
+					</div>
+					
+		<section class="seccion3">	
+			 <h2 align="center">Tabla de Posiciones</h2>
+		      <table align="center">
+			 	<tbody id="tabla1">
+				 	<tr s>
+				 		<th>Equipo</th>
+				 		<th>Ptos</th>
+				 		<th>PJ</th>
+				 		<th>PG</th>
+				 		<th>PE</th>
+				 		<th>PP</th>
+				 		<th>GF</th>
+				 		<th>GC</th>
+				 	</tr>
+				 	<tr s>
+				 		<td id="t6">Argentina</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 	</tr>
+				 	<tr s>
+				 		<td id="t6">Brasil</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 	</tr>
+				 	<tr s>
+				 		<td id="t6">Colombia</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 	</tr>
+				 	<tr s>
+				 		<td id="t6">Uruguay</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 	</tr>
+				 	<tr s>
+				 		<td id="t6">Perú</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 	</tr>
+				 	<tr s>
+				 		<td id="t6">Venezuela</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 		<td>0</td>
+				 	</tr>
+				</tbody>
+			 </table> 	
+
+			<br>	
+		    <br>
+				
+			<div align="center">
+			 <form>
+		         <input type="button" value="Limpiar Tabla" onClick="limpiar();" class="boton boton1">
+		      </form>	
+				<p>Pts: Puntos,PJ: Partidos Jugados,PG: Partidos Ganados,PE: Partidos Empatados,PP: Partidos Perdidos,GF: Goles a Favor,GC: Goles en Contra</p>
+		      </form>
+		    </div>
+				<br>
+				<br>
+		</section>
+
+				<footer class="footer">
+					<div class="social">
+						<a href="" class="icon-facebook"></a>
+						<a href="" class="icon-twitter"></a>
+						<a href="" class="icon-gplus"></a>
+					</div>
+					<p class="copy">&copy; Todos los derechos reservados.</p>
+					<p>Maracaibo, Estado Zulia.</p>
+				</footer>
+
+				<script src="tabla.js"></script>
+				<script type="text/javascript" src="menu.js"></script>
+	</body>
+</html>

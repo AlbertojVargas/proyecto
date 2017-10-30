@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#contenedor{
+	margin: 10px auto;
+	width: 540px;
+	height: 115px;
+}
+.reloj{
+	float: left;
+	font-size: 80px;
+	font-family: Courier,sans-serif;
+	color: #363431;
+}
+/*.boton{
+	outline: none;
+	border: .5px solid;
+	color: white;
+	width: 128px;
+	height: 30px;
+	text-shadow: 0px -1px 1px black;
+	font-size: 20px;
+	border-radius: 3px;
+	font-family: Helvetica;
+	cursor: pointer;
+	background-color: #002a52;
+}
+.boton:active{
+	background-color: white;
+}
+.boton:hover{
+	box-shadow: 0px 0px 14px black;
+}*/
+
+.boton {
+	background-color: white;
+    border: solid 0.5px;
+    color: #002a52;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 128px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.boton:hover {
+	background-color: #002a52; 
+    color: white;
+}
